@@ -1,0 +1,15 @@
+.footer {
+  background: $secondary-color;
+  color: $text-color;
+  text-align: center;
+  padding: 20px;
+
+  &__link {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

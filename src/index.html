@@ -1,13 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>Кухонные панели на стекле</title>
     <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Landing Page</h1>
-  </body>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="logo">
+            <h1>Logo</h1>
+          </a>
+          <a href="#menu" class="header__menu-opener"></a>
+          <nav class="menu-desktop">
+            <ul class="menu-desktop__list">
+              <li class="menu-desktop__item">
+                <a href="#advantages" class="menu-desktop__link">
+                  Преимущества
+                </a>
+              </li>
+              <li class="menu-desktop__item">
+                <a href="#catalog" class="menu-desktop__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="menu-desktop__item">
+                <a href="#reviews" class="menu-desktop__link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu-desktop__item">
+                <a href="#contact" class="menu-desktop__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#contact" class="header__hire-link">
+            Заказать
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__content">
+          <div class="menu__top">
+            <a href="#" class="logo">
+             <h2>Logo</h2>
+            </a>
+            <a href="#" class="menu__cross"></a>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#advantages" class="menu__link">
+                Преимущества
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#catalog" class="menu__link">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#reviews" class="menu__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contact" class="menu__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="main" class="banner">
+        <div class="banner__content">
+            <h1 class="banner__title">Кухонные панели на стекле – стиль и практичность для вашего интерьера</h1>
+            <p class="banner__subtitle">Уникальные дизайны, качество, проверенное временем</p>
+            <button class="btn btn--primary">Выбрать дизайн</button>
+        </div>
+      </section>
+
+      <section id="advantages" class="advantages">
+          <div class="container advantages__container">
+              <div class="advantages__item">
+                  <img src="./images/icons/sponge.png" alt="Лёгкость ухода" class="advantages__icon">
+                  <p class="advantages__text">Чистота и лёгкость ухода</p>
+              </div>
+              <div class="advantages__item">
+                  <img src="./images/icons/shield.png" alt="Стойкость к повреждениям" class="advantages__icon">
+                  <p class="advantages__text">Стойкость к повреждениям</p>
+              </div>
+              <div class="advantages__item">
+                  <img src="./images/icons/brush.png" alt="Индивидуальный дизайн" class="advantages__icon">
+                  <p class="advantages__text">Индивидуальный дизайн</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="catalog" class="catalog">
+          <div class="container catalog__container">
+              <div class="catalog__item">
+                  <img src="images/panel1.jpeg" alt="Панель 1" class="catalog__image">
+                  <button class="btn btn--details">Подробнее</button>
+              </div>
+              <div class="catalog__item">
+                  <img src="images/panel2.jpeg" alt="Панель 2" class="catalog__image">
+                  <button class="btn btn--details">Подробнее</button>
+              </div>
+              <div class="catalog__item">
+                  <img src="images/panel3.jpeg" alt="Панель 3" class="catalog__image">
+                  <button class="btn btn--details">Подробнее</button>
+              </div>
+              <div class="catalog__item">
+                  <img src="images/panel4.jpeg" alt="Панель 4" class="catalog__image">
+                  <button class="btn btn--details">Подробнее</button>
+              </div>
+          </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+          <div class="container reviews__container">
+              <div class="reviews__slider" id="reviews-slider">
+                  <div class="reviews__item">
+                      <img src="images/client1.jpg" alt="Клиент 1" class="reviews__image">
+                      <p class="reviews__text">Отличное качество и быстрая доставка!</p>
+                  </div>
+                  <div class="reviews__item">
+                      <img src="images/client1.jpg" alt="Клиент 2" class="reviews__image">
+                      <p class="reviews__text">Панели идеально подошли для моей кухни!</p>
+                  </div>
+                  <div class="reviews__item">
+                      <img src="images/client1.jpg" alt="Клиент 3" class="reviews__image">
+                      <p class="reviews__text">Стильно и удобно! Спасибо за профессиональный подход!</p>
+                  </div>
+                  <div class="reviews__item">
+                      <img src="images/client1.jpg" alt="Клиент 4" class="reviews__image">
+                      <p class="reviews__text">Удобный выбор дизайна, доставка вовремя. Рекомендую!</p>
+                  </div>
+                  <div class="reviews__item">
+                      <img src="images/client1.jpg" alt="Клиент 5" class="reviews__image">
+                      <p class="reviews__text">Теперь кухня выглядит современно. Спасибо!</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="contact" class="contact">
+          <div class="contact__container">
+              <h2 class="contact__title">Оставьте заявку</h2>
+              <form class="contact__form">
+                  <input type="text" class="contact__input" placeholder="Имя">
+                  <input type="tel" class="contact__input" placeholder="Телефон">
+                  <textarea class="contact__textarea" placeholder="Сообщение"></textarea>
+                  <button type="submit" class="btn btn--submit">Отправить заявку</button>
+              </form>
+          </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__socials">
+                <a href="#" class="footer__link">Instagram</a>
+                <a href="#" class="footer__link">Facebook</a>
+            </div>
+            <div class="footer__contacts">
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <p class="footer__copyright">© 2024 GlassKitchen</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
 </html>

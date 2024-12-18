@@ -1,0 +1,32 @@
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__input, &__textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .btn--submit {
+    background: $primary-color;
+    border: none;
+    color: $text-color;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}

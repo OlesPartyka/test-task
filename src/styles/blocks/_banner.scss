@@ -1,0 +1,28 @@
+.banner {
+  background: url('../images/banner.jpg') no-repeat center center / cover;
+  color: $text-color;
+  text-align: center;
+  padding: 100px 20px;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .btn--primary {
+    background: $primary-color;
+    border: none;
+    color: $text-color;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}

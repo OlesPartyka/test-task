@@ -1,0 +1,38 @@
+.page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  &__body {
+    font-family: $font-family;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    transition: transform 1s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  :has(.page__menu:target) {
+    overflow: hidden;
+  }
+}
+
+
+
+

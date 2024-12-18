@@ -1,0 +1,81 @@
+.header {
+  background-color: $secondary-color;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    margin: 0 auto;
+    padding: 20px 20px 0;
+
+    @include on-tablet {
+      padding: 20px 41px 0;
+    }
+
+    @include on-small-desktop {
+      padding: 20px 54px 0;
+      max-width: 918px;
+    }
+  }
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+
+    @include on-small-desktop {
+      justify-content: space-between;
+    }
+  }
+
+  &__menu-opener {
+    display: block;
+    height: 8px;
+    width: 18px;
+    margin-left: 32px;
+    background-image: url(../images/icons/menu-opener.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include on-small-desktop {
+      display: none;
+    }
+  }
+
+  &__hire-link {
+    margin-left: auto;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 3px;
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+
+    @include on-small-desktop {
+      height: 48px;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 98%;
+      border-radius: 4px;
+      background-color: $primary-color;
+      position: absolute;
+      bottom: -8px;
+
+      @include on-small-desktop {
+        bottom: 8px;
+      }
+    }
+  }
+
+}
